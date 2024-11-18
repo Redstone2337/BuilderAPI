@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "builder-api",
+	"version": "${version}",
+	"name": "Builder Api",
+	"description": "Welcome to use more hammer craft pre-builder API mod for Fabric Minecraft!",
+	"authors": [
+		"Redstone233"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/builder-api/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.redstone233.builder.BuilderApi"
+		],
+		"fabric-datagen": [
+			"net.redstone233.builder.BuilderApiDataGenerator"
+		]
+	},
+	"mixins": [
+		"builder-api.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.5",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
